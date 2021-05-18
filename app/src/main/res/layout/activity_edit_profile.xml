@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/EditProfileLayout"
+    tools:context=".EditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Edit In Your Info" />
+
+
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        tools:context=".EditProfile">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name:  "/>
+
+            <EditText
+                android:id="@+id/nametextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <ImageView
+                android:id="@+id/NameIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/name_icon"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Phone Number: "/>
+
+            <EditText
+                android:id="@+id/phonetextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="8"/>
+
+            <ImageView
+                android:id="@+id/PhoneIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/phone_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email:  "/>
+
+            <EditText
+                android:id="@+id/emailtextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <ImageView
+                android:id="@+id/EmailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/email_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reddit: "/>
+
+            <EditText
+                android:id="@+id/reddittextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <ImageView
+                android:id="@+id/RedditIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/reddit_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Twitter: "/>
+
+            <EditText
+                android:id="@+id/twittertextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <ImageView
+                android:id="@+id/TwitterIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/twitter_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Instagram: "/>
+
+            <EditText
+                android:id="@+id/instagramtextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="9"/>
+
+            <ImageView
+                android:id="@+id/InstagramIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/instagram_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LinkedIn URL: "/>
+
+            <EditText
+                android:id="@+id/linkedintextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="8"/>
+
+            <ImageView
+                android:id="@+id/LinkedinIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/linkedin_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Website: "/>
+
+            <EditText
+                android:id="@+id/websitetextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <ImageView
+                android:id="@+id/WebsiteIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/website_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Github:  "/>
+
+            <EditText
+                android:id="@+id/githubtextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <ImageView
+                android:id="@+id/GithubIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/github_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Interests: "/>
+
+            <EditText
+                android:id="@+id/intereststextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <ImageView
+                android:id="@+id/InterestsIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/interests_icon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ice Breaker:"/>
+
+            <EditText
+                android:id="@+id/icebreakertextentry"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"/>
+
+            <ImageView
+                android:id="@+id/IcebreakerIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:tint="@color/black"
+                android:src="@drawable/ic_iceberg"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_200"
+                android:onClick = "saveProfileEdits"
+                android:layout_marginTop="50dp"
+                android:text="SAVE"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

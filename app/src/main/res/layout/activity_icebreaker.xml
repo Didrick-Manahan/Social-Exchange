@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="30dp">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="75"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Choose your icebreaker:"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:layout_marginBottom="30dp"></TextView>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:id="@+id/radio_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What's a 'perfect' day for you?"
+                android:textSize="25dp"
+                android:onClick="checkButton"
+                android:layout_marginBottom="30dp"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radio_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Super power of choice?"
+                android:textSize="25dp"
+                android:layout_marginBottom="30dp"
+                android:onClick="checkButton"/>
+            <RadioButton
+                android:id="@+id/radio_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When did you last sing to yourself?"
+                android:textSize="25dp"
+                android:layout_marginBottom="30dp"
+                android:onClick="checkButton"/>
+
+            <RadioButton
+                android:id="@+id/radio_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..Or type your own icebreaker:"
+                android:textSize="25dp"
+                android:onClick="checkButton"
+                android:layout_marginBottom="20dp"/>
+            <EditText
+                android:id="@+id/CustomIceBreaker"
+                android:layout_width="285dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:inputType="textWebEditText"
+                android:padding="5dp"
+                android:layout_marginBottom="20dp"></EditText>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_view_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:text="Your selection: "
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:drawableRight="@drawable/right_arrow"
+        android:drawableTint="@color/white"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:onClick="save"
+        android:layout_gravity="right"
+        android:backgroundTint="@color/darkest_color"
+        ></Button>
+
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="50"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter your professional social media handles"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="30dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/cardview_default_elevation"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="LinkedIn: "
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+            <EditText
+                android:layout_marginHorizontal="5dp"
+
+                android:id="@+id/linkedinID"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:inputType="textWebEditText"
+                android:layout_weight="1.5"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_border"></EditText>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:src="@drawable/linkedin_icon"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="@dimen/cardview_default_elevation"
+                android:layout_weight="3"
+                android:gravity="start"
+                android:text="Website:"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+            <EditText
+                android:layout_marginHorizontal="5dp"
+
+                android:id="@+id/websiteID"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:layout_weight="10"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_border"></EditText>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:src="@drawable/website_icon"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="@dimen/cardview_default_elevation"
+                android:layout_weight="3"
+                android:gravity="start"
+                android:text="Github:"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+            <EditText
+                android:layout_marginHorizontal="5dp"
+                android:id="@+id/githubID"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:layout_weight="10"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_border"></EditText>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:src="@drawable/github_icon"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:layout_marginRight="@dimen/cardview_default_elevation"
+                android:layout_weight="3"
+                android:gravity="start"
+                android:text="Discord:"
+                android:textColor="@color/black"
+                android:textSize="25dp"></TextView>
+
+            <EditText
+                android:layout_marginHorizontal="5dp"
+                android:id="@+id/discordID"
+                android:layout_width="15dp"
+                android:layout_height="40dp"
+                android:inputType="textPersonName"
+                android:layout_weight="10"
+                android:padding="5dp"
+                android:background="@drawable/edit_text_border"></EditText>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:src="@drawable/discord_icon"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:drawableRight="@drawable/right_arrow"
+        android:drawableTint="@color/white"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:onClick="save"
+        android:layout_gravity="right"
+        android:backgroundTint="@color/darkest_color"
+        ></Button>
+
+
+
+
+
+</LinearLayout>

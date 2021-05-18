@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/person1"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+            android:src="@drawable/ic_person"/>
+
+        <TextView
+            android:id="@+id/peer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/person1"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Shivani Kamitkar"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:drawableRight="@drawable/ic_drop_down"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/person2"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/peer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/person2"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Didrick Manahan"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:drawableRight="@drawable/ic_drop_down"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/person3"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/peer3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/person3"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Andrew Benington"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:drawableRight="@drawable/ic_drop_down"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/person4"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/peer4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/person4"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Eddie Rajcevic"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawableRight="@drawable/ic_drop_down"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl5"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/person5"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+            android:src="@drawable/ic_person" />
+
+        <TextView
+            android:id="@+id/peer5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/person5"
+            android:background="@drawable/rectangle"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Bryan Goldberg"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawableRight="@drawable/ic_drop_down"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

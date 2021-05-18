@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/lighter_grey">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="All"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangle_straight"/>
+        <TextView
+            android:id="@+id/class1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="CS 465"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangle_straight"/>
+        <TextView
+            android:id="@+id/class2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="MATH 415"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangle_straight"/>
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="More"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:background="@drawable/rectangle_straight"
+            android:drawableEnd="@drawable/ic_drop_down"/>
+    </LinearLayout>
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent" android:layout_height="wrap_content"-->
+<!--android:background="@color/lighter_grey">-->
+<!--    <RelativeLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+<!--    <TextView-->
+<!--        android:id="@+id/all"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="All"-->
+<!--        android:textSize="20sp"-->
+<!--        android:paddingRight="50dp"-->
+<!--        android:paddingLeft="50dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:background="@drawable/rectangle_straight"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/class1"-->
+<!--        android:layout_toEndOf="@+id/all"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="CS 465"-->
+<!--        android:textSize="20sp"-->
+<!--        android:paddingRight="50dp"-->
+<!--        android:paddingLeft="50dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:background="@drawable/rectangle_straight"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/class2"-->
+<!--        android:layout_toEndOf="@+id/class1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="MATH 415"-->
+<!--        android:textSize="20sp"-->
+<!--        android:padding="5dp"-->
+<!--        android:background="@drawable/rectangle_straight"/>-->
+<!--    <TextView-->
+<!--        android:id="@+id/more"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="More"-->
+<!--        android:textSize="20sp"-->
+<!--        android:padding="5dp"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:background="@drawable/rectangle_straight"-->
+<!--        android:drawableEnd="@drawable/ic_drop_down"/>-->
+<!--    </RelativeLayout>-->
+<!--</RelativeLayout>-->

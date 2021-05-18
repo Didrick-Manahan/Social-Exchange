@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="6dp"
+        app:cardBackgroundColor="@color/lighter_grey"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp"
+        android:foregroundGravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/discord_icon"
+                android:id="@+id/checklist_icon"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                app:tint="@color/white"
+                android:background="@color/darkest_color"/>
+            <CheckedTextView
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checkMark="@drawable/ic_baseline_check_24"
+                android:checkMarkTint="@color/darker_grey"
+                android:text="placeholder"
+                android:textSize="22sp"
+                android:padding="4dp"
+                android:elevation="4dp"
+                android:gravity="center"
+                android:id="@+id/checklist_text"/>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

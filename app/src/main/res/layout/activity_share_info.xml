@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/share_info_instructions"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/allsocbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/allprofbutton"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@id/allprofbutton"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/darker_grey"
+                android:text="@string/all_social"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/allprofbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/sharelinkbutton"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="@color/darker_grey"
+                android:text="@string/all_prof"
+                android:textSize="12sp" />
+
+            <ListView
+                android:id="@+id/sharelist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="25dp"
+                android:divider="@null"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp" />
+
+
+            <Button
+                android:id="@+id/sharelinkbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignLeft="@id/allprofbutton"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/darkest_color"
+                android:drawableTint="@color/white"
+                android:elevation="3dp"
+                android:text="@string/share_link_button"
+                android:textSize="20sp">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

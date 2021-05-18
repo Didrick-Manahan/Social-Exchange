@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    Bottom Nav Bar Start-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNav"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/menu"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_above="@+id/bottomNav"
+        android:background="#000000"/>
+
+<!--    Bottom Nav Bar End-->
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:id="@+id/no_saved_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:textSize="25sp"
+        android:textColor="@color/text_color"
+        android:text="You don't have anybody saved yet! \n Share your link with others, and \n click on their links to get started!"
+        android:background="@drawable/rectangle"/>
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="150dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/no_saved_users"
+        android:paddingTop="10dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_down_arrow" />
+    <ImageView
+        android:id="@+id/down_arrow_2"
+        android:layout_width="150dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/down_arrow"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_down_arrow" />
+
+</RelativeLayout>

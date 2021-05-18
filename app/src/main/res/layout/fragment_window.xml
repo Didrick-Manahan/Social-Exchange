@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Window">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/link_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="50dp"
+                android:textColor="@color/darker_grey"
+                android:textStyle="bold"
+                android:text="LINK GOES HERE"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_height="60dp"
+                    android:text="Email"
+                    android:backgroundTint="@color/darkest_color"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_height="60dp"
+                    android:text="Copy"
+                    android:backgroundTint="@color/darkest_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/qr_display"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginVertical="50dp"
+                android:src="@drawable/ic_launcher_background" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
